@@ -1,0 +1,27 @@
+name: AscendentAdmin
+description: "${description}"
+prefix: AscendentAdmin
+version: '${version}'
+
+main: com.thelastascension.ascendentAdmin.AscendentAdmin
+api-version: '1.21.1'
+load: POSTWORLD
+depend: [ AscendentCore, AscendentCombat, AscendentClasses ]
+softdepend: [ MythicMobs, ModelEngine ]
+
+authors: [ Sebilebi ]
+website: https://github.com/The-Last-Ascension
+
+commands:
+  staff:
+    description: Abre el Panel de Staff y Administracion total de The Last Ascension
+    aliases: [ admin, panel, ascadmin ]
+    permission: ascendent.admin
+
+permissions:
+  ascendent.admin:
+    description: Acceso total al Panel de Staff y herramientas de administracion
+    default: op
+  ascendent.staff:
+    description: Permiso alternativo de Staff para abrir el panel de administracion
+    default: op

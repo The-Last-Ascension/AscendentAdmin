@@ -1,0 +1,12 @@
+# ============================================================================
+#   THE LAST ASCENSION (ASCENDANT) - AscendentAdmin v1.0.0
+#   Configuración del Panel de Staff y Administración Total
+# ============================================================================
+
+security:
+  # Permisos válidos además de OP para acceder a /staff, /admin, /panel
+  required-permissions:
+    - "ascendent.admin"
+    - "ascendent.staff"
+  # Registrar en consola cada acción administrativa importante
+  audit-log: true
